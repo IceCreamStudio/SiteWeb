@@ -117,8 +117,7 @@ h1{
     text-align: center;
 }
 
-
-/* The Modal (background) */
+/*Modal:start*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -133,16 +132,29 @@ h1{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    -webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+
 }
 
-/* The Close Button */
+@-webkit-keyframes animateTop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animateTop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
 .close {
     color: #aaaaaa;
     float: right;
@@ -156,3 +168,4 @@ h1{
     text-decoration: none;
     cursor: pointer;
 }
+/*Modal:End*/

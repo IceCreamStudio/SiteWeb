@@ -1,0 +1,158 @@
+/* Put your css in here */
+body, html{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+@@font-face {
+    src: url(font/Bonkers.otf);
+    font-family: Bonkers;
+}
+
+*{
+    font-family: 'Lato', serif;
+}
+
+.red{
+    background-color: #1D3557;
+    /*transition: all ease-out 1s;*/
+
+}
+
+.bodyAbout{
+    background-color: #457B9D;
+    transition: all ease-out 1s;
+
+}
+
+.bodyWork{
+    background-color: #A8DADC;
+    transition: all ease-out 1s;
+}
+
+.bodyContact{
+    background-color: #EA4A66;
+    transition: all ease-out 1s;
+}
+
+ul{
+    background-color: rgba(0,0,0,0.3);
+    height:120px;
+    display:block;
+}
+
+li{
+    list-style: none;
+    display:inline-block;
+}
+
+li a{
+    text-decoration: none;
+    color:black;
+    font-size: 5em;
+    font-family: 'Arvo', serif;
+}
+
+.nav{
+    position:relative;
+    width:100%;
+    margin:auto;
+}
+
+h1{
+    position: absolute;
+    z-index:9999;
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 5em;
+    font-family: Bonkers;
+}
+
+.wrapper{
+    width:100%;
+    margin:auto;
+    padding: 0;
+}
+
+.firstScreen{
+    height:calc(100vh - 120px );
+    padding: 0;
+}
+
+.imgFirstScreen{
+    padding: 0;
+    z-index:2;
+    width:468px;
+    height:600px;
+    position:relative;
+    margin:auto;
+}
+
+.imgFirstScreen img{
+    position:absolute;
+    left:0;
+    top:0;
+    -moz-animation: spin 3s linear infinite;
+}
+@-moz-keyframes spin { 33% { -moz-transform: rotate(15deg);} }
+
+
+.secondScreen{
+    height:100vh;
+    width:100%;
+    margin:auto;
+    background-color: #bbb;
+}
+
+.conctactSpeech{
+    position:absolute;
+    border:solid 1px green;
+    height:100vh;
+    width: 60%;
+    margin:auto;
+    background-color:red;
+}
+
+.conctactSpeech p {
+    text-align: center;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
